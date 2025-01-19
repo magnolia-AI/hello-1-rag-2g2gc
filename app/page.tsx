@@ -1,10 +1,15 @@
 'use client'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
+import { ThemeToggle } from '@/components/theme-toggle'
 export default function Home() {
   return (
     <main className="min-h-screen bg-background">
-      {/* Hero Section */}
+      {/* Theme Toggle */}
+      <div className="absolute top-4 right-4">
+        <ThemeToggle />
+      </div>
+            {/* Hero Section */}
       <section className="container mx-auto px-4 pt-32 pb-24">
         <div className="max-w-[800px] mx-auto text-center">
           <h1 className="text-5xl font-bold tracking-tight lg:text-6xl bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
